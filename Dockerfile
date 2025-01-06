@@ -14,7 +14,7 @@ COPY . .
 RUN chmod +x ./gradlew
 
 # Gradle build işlemini gerçekleştir
-RUN ./gradlew bootJar --no-daemon
+
 
 # 2. Çalıştırma aşaması
 FROM openjdk:17-jdk-slim
