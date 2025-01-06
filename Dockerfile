@@ -8,7 +8,7 @@ RUN chmod +x ./gradlew
 
 RUN ./gradlew bootJar --no-daemon
 
-FROM openjdk:23-jdk-slim
+FROM openjdk:17-jdk
 EXPOSE 8080
 COPY --from=build /build/libs/demotest-0.0.1-SNAPSHOT.jar app.jar
 
